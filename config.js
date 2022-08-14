@@ -14,7 +14,7 @@ requirejs.config({
         worldmap    : 'worldmap-libs',
         worldmaptopo: 'worldmap-topojson',
         mediaelement: 'mediaelement.min',
-        header      : 'modules/header',
+        header      : 'components/header',
         srvheader   : 'modules/serviceheader',
         copy3       : 'modules/copy3',
         howwe       : 'modules/howwe',
