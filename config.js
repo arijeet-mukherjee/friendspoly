@@ -18,7 +18,7 @@ requirejs.config({
         srvheader   : 'modules/serviceheader',
         copy3       : 'modules/copy3',
         howwe       : 'modules/howwe',
-        footer      : 'modules/footer',
+        footer      : 'components/footer',
         hireusheader: 'modules/hireusheader',       
         swiper      : 'https://unpkg.com/swiper@8/swiper-bundle.min',
         smtp        : 'https://smtpjs.com/v3/smtp'

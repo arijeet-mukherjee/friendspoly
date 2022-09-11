@@ -11,13 +11,15 @@ define([
     'bootstrap',
     'header',
     'swiper',
-    'smtp'
+    'smtp',
+    'footer'
 
-], function ($, popper, slick, imagesloaded, isotype, worldmap, wow, worldmaptopo, mediaelement, bootstrap, header, Swiper, smtp) {
+], function ($, popper, slick, imagesloaded, isotype, worldmap, wow, worldmaptopo, mediaelement, bootstrap, header, Swiper, smtp, footer) {
     'use strict';
     var map = {};
     $(document).ready(function () {
         header.loadHeader("header");
+        footer.loadFooter("footer");
 
     });
 
