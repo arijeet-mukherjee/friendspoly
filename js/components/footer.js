@@ -26,27 +26,11 @@ define([
         
     </ul>
     
-    <ul class="footer_pages">
-      
-      
-        <li><a title="View Brands" href="/brands">Brands</a></li>
-      
-        <li><a title="View Shipping Policy" href="/shipping-policy">Shipping Policy</a></li>
-      
-        <li><a title="View Returns &amp; Refunds" href="/returns-refunds">Returns & Refunds</a></li>
-      
-        <li><a title="View Privacy Policy" href="/privacy-policy">Privacy Policy</a></li>
-      
-        <li><a title="View Become a Dealer" href="/become-a-dealer">Become a Dealer</a></li>
-      
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-    
     <div class="disclaimer-text"><strong>Disclaimer:</strong> All manufacturer names, symbols, and descriptions, used in our images and text are used solely for identification purposes only. It is neither inferred nor implied that any item sold by FriendsPolyIndia.com is a product authorized by or in any way connected with our manufacturers displayed on page.</div>
  <br>
     <!-- TrustBox widget - Review Collector -->
 <div class="trustpilot-widget" data-locale="en-US">
-  <a href="https://www.trustpilot.com/review/tacoclout.com" target="_blank" rel="noopener">Friends Packaging</a>
+  <a href="#" target="_blank" rel="noopener">Friends Packaging</a>
 </div>
 <!-- End TrustBox widget --> 
   </footer>`
