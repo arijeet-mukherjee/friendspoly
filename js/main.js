@@ -96,11 +96,11 @@ define([
             ignoreTouch = 10;;
          // Testim Script
          function playSlide(slide) {
-             /* for (var k = 0; k < testimDots.length; k++) {
+              for (var k = 0; k < 4; k++) {
                  testimContent[k].classList.remove("active");
                  testimContent[k].classList.remove("inactive");
-                 testimDots[k].classList.remove("active");
-             } */
+                // testimDots[k].classList.remove("active");
+             }
 
              if (slide < 0) {
                  slide = currentSlide = testimContent.length - 1;
@@ -132,11 +132,11 @@ define([
              playSlide(currentSlide += 1);
          })
 
-         for (var l = 0; l < testimDots.length; l++) {
+        /*  for (var l = 0; l < testimDots.length; l++) {
              testimDots[l].addEventListener("click", function () {
                  playSlide(currentSlide = testimDots.indexOf(this));
              })
-         }
+         } */
 
          playSlide(currentSlide);
 
