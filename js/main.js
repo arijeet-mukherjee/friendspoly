@@ -158,11 +158,11 @@ define([
                  default:
                      break;
              }
-         })
+         });
 
          testim.addEventListener("touchstart", function (e) {
              touchStartPos = e.changedTouches[0].clientX;
-         })
+         });
 
          testim.addEventListener("touchend", function (e) {
              touchEndPos = e.changedTouches[0].clientX;
@@ -182,7 +182,8 @@ define([
                  return;
              }
 
-         })
+         });
+         
      }
 
 
