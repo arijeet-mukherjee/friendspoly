@@ -191,5 +191,44 @@ define([
      /* Testimonial End */
 
      // Contact Us
-     contact_us.loadContact("contact_us")
+     contact_us.loadContact("contact_us");
+
+     /* Added the open close humberger */
+     function openCloseNav(){
+        document.getElementById("header").addEventListener("click", touchHandler, false);
+        document.getElementById("close_overlay").addEventListener("click", touchHandler, false);
+
+        function touchHandler(e) {
+            //console.log(e);
+            var c = document.querySelectorAll('.overlay');
+            //console.log(c[0].className);
+            let b = false;
+            for (let i = 0; i < c.length; i++) {
+                let cN = c[i].className;
+                if (cN.includes('open')) {
+                    b = true;
+                    break;
+                }
+            }
+
+
+
+            let element = document.getElementsByClassName('overlay');
+            console.log(element[0].className);
+            //  b?elemen.log("remove"):console.log("add");
+            if (b) {
+                for (let j = 0; j < c.length; j++) {
+                    element[j].classList.remove('open');
+                    element[j].classList.remove('navigation');
+                }
+
+            } else {
+                for (let j = 0; j < c.length; j++) {
+                    element[j].classList.add('open');
+                    element[j].classList.add('navigation');
+                }
+            }
+        }
+     }
+     openCloseNav();
 });
