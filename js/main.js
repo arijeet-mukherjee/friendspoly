@@ -12,9 +12,10 @@ define([
     'header',
     'swiper',
     'smtp',
-    'footer'
+    'footer',
+    'contact_us'
 
-], function ($, popper, slick, imagesloaded, isotype, worldmap, wow, worldmaptopo, mediaelement, bootstrap, header, Swiper, smtp, footer) {
+], function ($, popper, slick, imagesloaded, isotype, worldmap, wow, worldmaptopo, mediaelement, bootstrap, header, Swiper, smtp, footer, contact_us) {
     'use strict';
     var map = {};
     $(document).ready(function () {
@@ -189,4 +190,6 @@ define([
 
      /* Testimonial End */
 
+     // Contact Us
+     contact_us.loadContact("contact_us")
 });

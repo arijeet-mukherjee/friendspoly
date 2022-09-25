@@ -33,25 +33,7 @@ define([
                         <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"
                             class="about_thumb aos-init aos-animate">
                             <div class="container" style="width:85%">
-                                <form>
-                                    <ul>
-                                        <li>
-                                            <label for="name"><span>Name <span class="required-star">*</span></span></label>
-                                            <input type="text" id="name" name="user_name" required>
-                                        </li>
-                                        <li>
-                                            <label for="mail"><span>Email <span class="required-star">*</span></span></label>
-                                            <input type="email" id="mail" name="user_email" required>
-                                        </li>
-                                         <li>
-                                            <label for="phonenumber"><span>Phone Number <span class="required-star">*</span></span></label>
-                                            <input type="number" id="mobile" name="user_mobile" required>
-                                        </li>
-                                        <li>
-                                            <input type="submit" >
-                                        </li>
-                                    </ul>
-                                </form>
+                                
                             </div>
         
                         </div>
@@ -77,19 +59,6 @@ define([
         
                 </div>
               </div>
-                <footer class="page-footer font-small blue">
-                     <section style="text-align:center;color:#fff;">
-                        <a href="https://www.facebook.com/Online-Disruptor-109178600796626/" target="_blank" style="color:#fff;padding:4px"><i class="fa fa-facebook"></i></a>
-                        <a href="https://instagram.com/onlinedisruptor?igshid=1ljnbyj7766yi" target="_blank" style="color:#fff;padding:4px"><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/OnlineDisruptor?s=09" target="_blank" style="color:#fff;padding:4px"><i class="fa fa-twitter"></i></a>
-                        <a href="#" target="_blank" style="color:#fff;padding:4px"><i class="fa fa-telegram"></i></a>
-                    </section>
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3">© 2022 Copyright:
-                        <a href="https://onlinedisruptor.com/" style="color:gray" target="_blank" > onlinedisruptor.com</a>
-                    </div>
-                    <!-- Copyright -->
-                </footer>
         </div>      
        `;
     
