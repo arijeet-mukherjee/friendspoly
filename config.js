@@ -21,7 +21,8 @@ requirejs.config({
         footer      : 'components/footer',
         hireusheader: 'modules/hireusheader',       
         swiper      : 'https://unpkg.com/swiper@8/swiper-bundle.min',
-        smtp        : 'https://smtpjs.com/v3/smtp'
+        smtp        : 'https://smtpjs.com/v3/smtp',
+        contact_us  : 'components/contact_us'
        
         
     }
