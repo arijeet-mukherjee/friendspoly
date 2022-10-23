@@ -22,11 +22,11 @@ define([
                    
                     <div class="col-xl-7 col-lg-7">
                         <div class="container">
-                            <span class="sc" style="color: rgb(255, 15, 123);font-size:50px; font-weight:bold;">Let's 
+                            <span class="sc" style="color: #000;font-size:50px; font-weight:bold;">Let's 
                             </span>
-                             <span class="sc" style="color: #fff;font-size:50px; font-weight:bold;">spice
+                             <span class="sc" style="color: #fff;font-size:50px; font-weight:bold;">package
                              </span>
-                             <span class="sc" style="color: rgb(255, 15, 123);font-size:50px; font-weight:bold;">it up.
+                             <span class="sc" style="color: #000;font-size:50px; font-weight:bold;">it up.
                              </span>
                              
                         </div>
@@ -45,7 +45,7 @@ define([
                         <div class="about_text aos-init aos-animate" data-aos="fade-right" data-aos-offset="300"
                             data-aos-easing="ease-in-sine" style="padding:15px;">
                             <div>
-                                <span class="sc" style="color: rgb(255, 15, 123);font-size:40px; font-weight:bold;">Address
+                                <span class="sc" style="color: #000;font-size:40px; font-weight:bold;">Address
                                 </span>
                             
                             </div>
