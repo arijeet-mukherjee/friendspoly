@@ -335,13 +335,15 @@ body .checkout_btn:hover {
 .welcome_image {
     height: 70vh !important;
     background-attachment: unset !important;
-    background-image: url('https://i.imgur.com/J1up3OB.jpg') !important;
+    opacity: 0.9;
+    background-image: url('../assets/img/back.jpg') !important;
 }
 
 @media screen and (max-width: 668px) {
     .welcome_image {
         height: 100vh !important;
-        background-image: url('https://i.imgur.com/7aTxWeO.jpg') !important;
+        opacity: 0.9;
+        background-image: url('../assets/img/back.jpg') !important;
     }
 }
 
