@@ -11,7 +11,7 @@ define([
                 console.log(args);
                 this.phonenumber="+91 91238 67498"
                 document.getElementById(args).innerHTML=`
-                <div class="about_info_area" style="background-color: #300753;">
+                <div class="about_info_area" style="background-color: #66cc33;">
         
                  <div class="container" style="padding:35px 5px 5px 0px">
         
