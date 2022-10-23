@@ -335,7 +335,7 @@ body .checkout_btn:hover {
 .welcome_image {
     height: 70vh !important;
     background-attachment: unset !important;
-    opacity: 0.9;
+    opacity: 0.98;
     background-image: url('../assets/img/back.jpg') !important;
 }
 
@@ -1747,7 +1747,11 @@ h2.featured_products {
 }
 
 .welcome_image {
-    background-image: url('https://assets.bigcartel.com/theme_images/59738175/bg2.jpg?auto=format&fit=max&w=1400');
+    background-image: url('../assets/img/back.jpg') !important;
+    background: #000;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), #000), url("https://bit.ly/2rlzaXi");
+    background: linear-gradient(rgba(29, 38, 113, 0.8), #000), url("https://bit.ly/2rlzaXi");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
