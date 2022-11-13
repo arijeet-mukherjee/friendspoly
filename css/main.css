@@ -4907,3 +4907,10 @@ body .hideforall {
         line-height: 25px;
     }
 }
+
+#myForm {
+    margin-top: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
