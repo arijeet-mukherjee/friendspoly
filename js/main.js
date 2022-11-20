@@ -21,6 +21,7 @@ define([
     $(document).ready(function() {
         header.loadHeader("header");
         footer.loadFooter("footer");
+        lazyLoad();
     });
 
     /* Lazy Loading Images */
