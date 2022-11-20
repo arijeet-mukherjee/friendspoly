@@ -15,13 +15,12 @@ define([
     'footer',
     'contact_us'
 
-], function ($, popper, slick, imagesloaded, isotype, worldmap, wow, worldmaptopo, mediaelement, bootstrap, header, Swiper, smtp, footer, contact_us) {
+], function($, popper, slick, imagesloaded, isotype, worldmap, wow, worldmaptopo, mediaelement, bootstrap, header, Swiper, smtp, footer, contact_us) {
     'use strict';
     var map = {};
-    $(document).ready(function () {
+    $(document).ready(function() {
         header.loadHeader("header");
         footer.loadFooter("footer");
-
     });
 
     /* Lazy Loading Images */
@@ -32,8 +31,8 @@ define([
 
         if ("IntersectionObserver" in window) {
             lazyloadImages = document.querySelectorAll(".lazy");
-            var imageObserver = new IntersectionObserver(function (entries, observer) {
-                entries.forEach(function (entry) {
+            var imageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
                         var image = entry.target;
                         image.src = image.dataset.src;
@@ -43,7 +42,7 @@ define([
                 });
             });
 
-            lazyloadImages.forEach(function (image) {
+            lazyloadImages.forEach(function(image) {
                 imageObserver.observe(image);
             });
         } else {
@@ -55,9 +54,9 @@ define([
                     clearTimeout(lazyloadThrottleTimeout);
                 }
 
-                lazyloadThrottleTimeout = setTimeout(function () {
+                lazyloadThrottleTimeout = setTimeout(function() {
                     var scrollTop = window.pageYOffset;
-                    lazyloadImages.forEach(function (img) {
+                    lazyloadImages.forEach(function(img) {
                         if (img.offsetTop < (window.innerHeight + scrollTop)) {
                             img.src = img.dataset.src;
                             img.classList.remove('lazy');
@@ -79,9 +78,9 @@ define([
 
     /* Lazy Loading Images end*/
 
-     /* Testimonial */
+    /* Testimonial */
 
-     window.onload = function () {
+    window.onload = function() {
         var testim = document.getElementById("testim"),
             //testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
             testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
@@ -94,44 +93,44 @@ define([
             touchStartPos,
             touchEndPos,
             touchPosDiff,
-            ignoreTouch = 10;;
-         // Testim Script
-         function playSlide(slide) {
-              for (var k = 0; k < 4; k++) {
-                 testimContent[k].classList.remove("active");
-                 testimContent[k].classList.remove("inactive");
+            ignoreTouch = 10;
+        // Testim Script
+        function playSlide(slide) {
+            for (var k = 0; k < 4; k++) {
+                testimContent[k].classList.remove("active");
+                testimContent[k].classList.remove("inactive");
                 // testimDots[k].classList.remove("active");
-             }
+            }
 
-             if (slide < 0) {
-                 slide = currentSlide = testimContent.length - 1;
-             }
+            if (slide < 0) {
+                slide = currentSlide = testimContent.length - 1;
+            }
 
-             if (slide > testimContent.length - 1) {
-                 slide = currentSlide = 0;
-             }
+            if (slide > testimContent.length - 1) {
+                slide = currentSlide = 0;
+            }
 
-             if (currentActive != currentSlide) {
-                 testimContent[currentActive].classList.add("inactive");
-             }
-             testimContent[slide].classList.add("active");
-             //testimDots[slide].classList.add("active");
+            if (currentActive != currentSlide) {
+                testimContent[currentActive].classList.add("inactive");
+            }
+            testimContent[slide].classList.add("active");
+            //testimDots[slide].classList.add("active");
 
-             currentActive = currentSlide;
+            currentActive = currentSlide;
 
-             clearTimeout(testimTimer);
-             testimTimer = setTimeout(function () {
-                 playSlide(currentSlide += 1);
-             }, testimSpeed)
-         }
+            clearTimeout(testimTimer);
+            testimTimer = setTimeout(function() {
+                playSlide(currentSlide += 1);
+            }, testimSpeed)
+        }
 
-         testimLeftArrow.addEventListener("click", function () {
-             playSlide(currentSlide -= 1);
-         })
+        testimLeftArrow.addEventListener("click", function() {
+            playSlide(currentSlide -= 1);
+        })
 
-         testimRightArrow.addEventListener("click", function () {
-             playSlide(currentSlide += 1);
-         })
+        testimRightArrow.addEventListener("click", function() {
+            playSlide(currentSlide += 1);
+        })
 
         /*  for (var l = 0; l < testimDots.length; l++) {
              testimDots[l].addEventListener("click", function () {
@@ -139,62 +138,59 @@ define([
              })
          } */
 
-         playSlide(currentSlide);
+        playSlide(currentSlide);
 
-         // keyboard shortcuts
-         document.addEventListener("keyup", function (e) {
-             switch (e.keyCode) {
-                 case 37:
-                     testimLeftArrow.click();
-                     break;
+        // keyboard shortcuts
+        document.addEventListener("keyup", function(e) {
+            switch (e.keyCode) {
+                case 37:
+                    testimLeftArrow.click();
+                    break;
 
-                 case 39:
-                     testimRightArrow.click();
-                     break;
+                case 39:
+                    testimRightArrow.click();
+                    break;
 
-                 case 39:
-                     testimRightArrow.click();
-                     break;
+                case 39:
+                    testimRightArrow.click();
+                    break;
 
-                 default:
-                     break;
-             }
-         });
+                default:
+                    break;
+            }
+        });
 
-         testim.addEventListener("touchstart", function (e) {
-             touchStartPos = e.changedTouches[0].clientX;
-         });
+        testim.addEventListener("touchstart", function(e) {
+            touchStartPos = e.changedTouches[0].clientX;
+        });
 
-         testim.addEventListener("touchend", function (e) {
-             touchEndPos = e.changedTouches[0].clientX;
+        testim.addEventListener("touchend", function(e) {
+            touchEndPos = e.changedTouches[0].clientX;
 
-             touchPosDiff = touchStartPos - touchEndPos;
+            touchPosDiff = touchStartPos - touchEndPos;
 
-             console.log(touchPosDiff);
-             console.log(touchStartPos);
-             console.log(touchEndPos);
-
-
-             if (touchPosDiff > 0 + ignoreTouch) {
-                 testimLeftArrow.click();
-             } else if (touchPosDiff < 0 - ignoreTouch) {
-                 testimRightArrow.click();
-             } else {
-                 return;
-             }
-
-         });
-         
-     }
+            console.log(touchPosDiff);
+            console.log(touchStartPos);
+            console.log(touchEndPos);
 
 
-     /* Testimonial End */
+            if (touchPosDiff > 0 + ignoreTouch) {
+                testimLeftArrow.click();
+            } else if (touchPosDiff < 0 - ignoreTouch) {
+                testimRightArrow.click();
+            } else {
+                return;
+            }
 
-     // Contact Us
-     contact_us.loadContact("contact_us");
+        });
 
-     /* Added the open close humberger */
-     function openCloseNav(){
+    }
+
+
+    /* Testimonial End */
+
+    /* Added the open close humberger */
+    function openCloseNav() {
         document.getElementById("header").addEventListener("click", touchHandler, false);
         document.getElementById("close_overlay").addEventListener("click", touchHandler, false);
 
@@ -229,6 +225,9 @@ define([
                 }
             }
         }
-     }
-     openCloseNav();
+    }
+    openCloseNav();
+
+    // Contact Us
+    document.getElementById("contact_us") ? contact_us.loadContact("contact_us") : console.log("No contact Section here");
 });

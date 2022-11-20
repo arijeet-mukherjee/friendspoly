@@ -49,32 +49,16 @@
 
     </div>
 
-
     <div class="tc__spacer30">&nbsp;</div>
 
     <div id="footer" style="margin-top: 3px; position:relative">
 
     </div>
 
-
-    <!-- Latest compiled and minified JavaScript -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="config"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
-    <script>
-        require(['config'], function() {
-            require(['main'], function() {
-                console.log('main js loaded');
-            });
-        });
-    </script>
-
-
-
     <div class="overlay">
         <div class="overlay_background" style="z-index: -10;"></div>
         <div class="overlay_content">
-            <svg class="close_overlay" viewBox="0 0 17 17">
+            <svg id="close_overlay" class="close_overlay" viewBox="0 0 17 17">
         <path d="M17 1.4L15.6 0 8.5 7.1 1.4 0 0 1.4l7.1 7.1L0 15.6 1.4 17l7.1-7.1 7.1 7.1 1.4-1.4-7.1-7.1z" />
       </svg>
             <ul class="page_list">
@@ -153,6 +137,17 @@
             </div>
         </div>
     </div>
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="config"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+    <script>
+        require(['config'], function() {
+            require(['main'], function() {
+                console.log('main js loaded');
+            });
+        });
+    </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>
